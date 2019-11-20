@@ -115,6 +115,9 @@ disk_nodes += [ (133, x * 16) for x in range(16) ]
 disk_nodes += [ (134, x * 16) for x in range(16) ]
 disk_nodes += [ (135, x * 16) for x in range(16) ]
 
+# mmcblk*
+disk_nodes += [ (179, x * 8) for x in range(16) ]
+
 # xvd* -> (blkfront has major 202: each device has 15 minors)
 disk_nodes += [ (202, x * 16) for x in range(16) ]
 
